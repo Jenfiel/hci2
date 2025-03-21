@@ -4,9 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../sims/css/index.css">
     <title>Sims</title>
 </head>
 <body>
+    <header> 
+        <nav>
+            <ul>
+                <li class="icon"><i class="fas fa-book"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Subjects</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="signup.php" class="button">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="container">
         <div class="row">
             <h1 class="text-center">Students Information Management System</h1>
@@ -44,14 +59,14 @@
                                         }
                                     ?> 
                                 </td>
-								<td> 
-									<button class="btn-danger btn"> 
-										<a href="delete.php?id=<?php echo $res['stud_id']; ?>" class="text-white"> Delete </a>  
-									</button>
-									<button class="btn-primary btn"> 
-										<a href="update.php?id=<?php echo $res['stud_id']; ?>" class="text-white"> Update </a> 
-									</button> 
-								</td>
+				<td> 
+					<button class="btn-danger btn"> 
+						<a href="delete.php?id=<?php echo $res['stud_id']; ?>" class="text-white"> Delete </a>  
+					</button>
+					<button class="btn-primary btn"> 
+						<a href="update.php?id=<?php echo $res['stud_id']; ?>" class="text-white"> Update </a> 
+					</button> 
+				</td>
                             </tr>
                     <?php
                         }
