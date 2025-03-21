@@ -14,8 +14,7 @@
             <ul>
                 <li class="icon"><i class="fas fa-book"></i></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="login.php" class="button">Log In</a></li>
                 <li><a href="signup.php" class="button">Sign In</a></li>
             </ul>
         </nav>
